@@ -1,0 +1,332 @@
+/* HTML */
+html {
+    scroll-behavior: smooth;
+}
+
+/* body */
+.body {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1600px;
+    align-items: center;
+    margin: auto;
+    padding: 0;
+    font-family: "Roboto", "Shrikhand", Verdana, Tahoma, sans-serif;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+.conteneur {
+    background-color: #cffcf1;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: 5;
+    animation: opacit 3000ms ease-in-out forwards;
+}
+.logo {
+    width: 100%;
+    max-width: 992px;
+    justify-content: center;
+}
+.logo img {
+    width: 44.25%;
+    height: auto;
+    margin: 22px auto 12px auto;
+}
+/* Main */
+.body .main {
+    position: relative;
+    width: 100%;
+    max-width: 1600px;
+}
+/* Maps */
+.maps {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    max-width: 1600px;
+    background-color: #EAEAEA;
+    box-shadow: 0 5px 5px #d4d4d4 inset;
+}
+.maps__btn {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+.maps__btn i {
+    font-size: 1em;
+    align-self: center;
+    padding-bottom: 5px;
+}
+.maps__btn input {
+    width: 70%;
+    text-align: center;
+    max-width: 100%;
+    background-color: #EAEAEA;
+    border: none;
+    font-size: 0.95em;
+    font-weight: 500;
+}
+/* Intro */
+.intro {
+    display: flex;
+    flex-direction: column;
+    background-color: #F6F6F6;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    padding: 40px 20px 50px 20px;
+    text-align: center;
+}
+.intro h1 {
+    width: 72%;
+    font-size: 1.35em;
+    font-weight: 700;
+    line-height: 115%;
+    margin-bottom: 12px;
+}
+.intro p {
+    font-size: 1em;
+    line-height: 120%;
+}
+.intro .btn--gradient {
+    background: linear-gradient(-5deg, #9356DC, #FF79DA);
+}
+/* Operative */
+.operative {
+    justify-content: center;
+    align-items: center;
+    padding: 52px 5.5% 62px 5.5%;
+    max-width: 640px;
+    margin: auto;
+}
+.operative h2 {
+    align-self: flex-start;
+    margin-left: 1%;
+}
+.howto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 96%;
+    max-width: 550px;
+    height: auto;
+    padding: 28px 40px 24px 40px;
+    margin: 0 0 25px 12px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px #d4d4d4;
+    background-color: #F6F6F6;
+}
+.howto__step--sort {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: #9356DC;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0px auto;
+    padding-top: 2px;
+    position: absolute;
+    left: -12px;
+    color: #FFFFFF;
+    font-size: 0.85em;
+    font-weight: 500;
+ }
+ .howto__step__byline {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    color: #FFFFFF;
+    font-size: 0.85em;
+    font-weight: 500;
+    color: black;
+}
+.howto__step__byline i {
+    font-size: 22px;
+    text-align: center;
+    color: #7E7E7E;
+}
+.operative p {
+    font-size: 1.1em;
+}
+.howto--background {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 96%;
+    max-width: 550px;
+    height: auto;
+    padding: 28px 40px 24px 40px;
+    margin: 0 0 25px 12px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px #d4d4d4;
+    background-color: #F5EDFF;
+}
+.howto__step__byline--bg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    color: #FFFFFF;
+    font-size: 0.85em;
+    font-weight: 500;
+    color: black;
+}
+.howto__step__byline--bg i {
+    font-size: 22px;
+    text-align: center;
+    color: #9356DC;
+}
+/* restaurants */
+.restaurants {
+    display: flex;
+    flex-direction: column;
+    background-color: #F6F6F6;
+    align-items: center;
+    max-width: 640px;
+    margin: auto;
+    padding: 58px 5.5%;
+}
+.restaurants h2 {
+    align-self: flex-start;
+    margin-left: 1%;
+}
+.restaurants__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px #d4d4d4;
+    position: relative;
+    width: 100%;
+    max-width: 420px;
+    height: auto;
+    background-color: #FFFFFF;
+    margin-bottom: 24px;
+}
+.card a {
+    text-decoration: none;
+    color: black;
+}
+.card img {
+    width: 100%;
+    height: 175px;
+    border-radius: 20px 20px 0 0;
+    object-fit: cover;
+    object-position: bottom;
+}
+.card__new-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 29px;
+    border-radius: 2px;
+    background-color: #99E2D0;
+    font-size: 0.8em;
+    font-weight: 500;
+    color: #008766;
+    position: absolute;
+    top: 13px;
+    right: 12px;
+}
+.card__like {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 24px 20px 16px;
+}
+.card__like__byline {
+    width: 200px;
+    height: 42px;
+    padding-bottom: 20px;
+    line-height: 1.3;
+    letter-spacing: -0.5px;
+}
+.card__like h3 {
+    font-size: 1.2em;
+    font-weight: 600;
+}
+.card__like p {
+    font-size: 1em;
+}
+.card__like i {
+    font-size: 24px;
+}
+.card__like img {
+    display: none;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px #d4d4d4;
+    position: relative;
+    width: 100%;
+    max-width: 420px;
+    height: auto;
+    background-color: #FFFFFF;
+    margin-bottom: 24px;
+}
+/* footer */
+.footer {
+    display: flex;
+    flex-direction: column;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    max-width: 1600px;
+    height: auto;
+    background-color: #353535;
+    padding: 30px 0 40px 8%;
+    margin: auto;
+}
+.sock {
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+}
+.sock h2 {
+    font-family: "Shrikhand";
+    font-size: 1.1em;
+    font-weight: lighter;
+    letter-spacing: 0.65px;
+    color: #FFFFFF;
+    width: 100%;
+    max-width: 600px;
+    text-align: left;
+    align-self: flex-start;
+}
+.sock ul.feedback {
+    list-style: none;
+    margin: 0;
+    padding: 15px 0 0 0;
+}
+.sock ul.feedback li a {
+    text-decoration: none;
+    font-size: 0.85em;
+    font-weight: 400;
+    color: #FFFFFF;
+    line-height: 1.7;
+    letter-spacing: 0.1px;
+}
+.sock ul.feedback li a i {
+    width: 25px;
+    font-size: 1em;
+}
